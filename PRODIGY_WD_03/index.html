@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tic‑Tac‑Toe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Tic‑Tac‑Toe</h1>
+
+      <section class="controls">
+        <label>
+          <input type="radio" name="mode" value="pvp" checked />
+          Player vs Player
+        </label>
+        <label>
+          <input type="radio" name="mode" value="pvc" />
+          Player vs Computer
+        </label>
+
+        <label class="start">
+          <span>First:</span>
+          <select id="firstPlayer">
+            <option value="X">X</option>
+            <option value="O">O</option>
+          </select>
+        </label>
+
+        <button id="restart">New Game</button>
+      </section>
+
+      <section class="status" id="status">Turn: X</section>
+
+      <section class="board" id="board">
+        <!-- 9 cells -->
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+      </section>
+    </main>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
